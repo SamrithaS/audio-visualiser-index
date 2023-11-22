@@ -19,6 +19,7 @@ function main() {
         if (!audio1.paused) audio1.pause();
         else audio1.play();
 
+        console.log(JSONValue, 'json value')
 
         audio1.addEventListener('timeupdate', () => {
             let currentTime = audio1.currentTime * 1000
@@ -57,9 +58,9 @@ function main() {
                 ctx.fillStyle = "white";
 
                 ctx.fillRect(
-                    i * barWidth,
+                    i * barWidth * 10,
                     (canvas.height - barHeight) / 1.4,
-                    barWidth * i,
+                    barWidth * 30,
                     barHeight,
                     "white"
                 );
@@ -77,6 +78,7 @@ async function query(audio1) {
     let res;
     // if (!audio1.paused) {
     const fileName = await axios.get(`https://audio-visualizer-three.vercel.app/get`);
+
     res = fileName.data;
     // }
     return res
