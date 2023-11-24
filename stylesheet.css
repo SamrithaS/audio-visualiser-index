@@ -106,18 +106,43 @@ img {
     color: #000;
     font-feature-settings: 'dlig' on, 'calt' off, 'liga' off;
     font-family: Spectral;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 131%;
     min-width: 350px;
     max-width: 350px;
-    min-height: 111px;
+    overflow: scroll;
+    max-height: 150px;
     /* max-height: 111px; */
     /* 36.68px */
     letter-spacing: -1.12px;
-    min-height: 111px;
-    top: 40px;
+    top: 28px;
     left: 32px;
     margin: 0px 32px 0 0px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+}
+
+.audio-lines.selected-state {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+.audio-text::-webkit-scrollbar {
+    display: none;
+}
+
+.audio-lines {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 131%;
+    opacity: 0.3;
+    transition: opacity 1s ease-in-out;
+    padding-bottom: 6px;
+    cursor: pointer
+}
+
+.audio-text.show {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+
 }
