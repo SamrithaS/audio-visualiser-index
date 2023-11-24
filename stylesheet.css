@@ -108,8 +108,8 @@ img {
     font-family: Spectral;
     min-width: 350px;
     max-width: 350px;
-    overflow: scroll;
-    max-height: 150px;
+    overflow: hidden;
+    max-height: 160px;
     /* max-height: 111px; */
     /* 36.68px */
     letter-spacing: -1.12px;
@@ -119,6 +119,17 @@ img {
     opacity: 0;
     transition: opacity 1s ease-in-out;
 
+
+}
+
+.fade {
+    background-image: linear-gradient(to top, #F5F079, rgba(239, 239, 239, 0));
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    bottom: 62%;
+    z-index: 1000;
+    pointer-events: none;
 }
 
 .audio-lines.selected-state {

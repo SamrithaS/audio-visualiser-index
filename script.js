@@ -38,7 +38,7 @@ function main() {
             analyser = audioContext.createAnalyser();
             audioSource.connect(analyser);
             analyser.connect(audioContext.destination);
-            analyser.fftSize = 512;
+            analyser.fftSize = 256;
             flag = 1;
         }
         const bufferLength = analyser.frequencyBinCount;
@@ -57,8 +57,8 @@ function main() {
 
                 ctx.fillRect(
                     i * barWidth * 10,
-                    (canvas.height - barHeight) / 1.4,
-                    barWidth * 30,
+                    (canvas.height - barHeight) / 0.6,
+                    barWidth * 60,
                     barHeight,
                     "white"
                 );
