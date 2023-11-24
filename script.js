@@ -9,7 +9,7 @@ function main() {
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    audio1.src = "audio1.mp3";
+    audio1.src = "https://github.com/SamrithaS/audio-visualiser-index/blob/main/audio1.mp3";
 
     query(audio1).then((response) => {
         JSONValue = response;
