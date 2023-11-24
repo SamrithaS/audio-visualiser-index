@@ -1,3 +1,4 @@
+import audiomp3 from "./audio1.mp3"
 function main() {
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
@@ -9,7 +10,7 @@ function main() {
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    audio1.src = "https://github.com/SamrithaS/audio-visualiser-index/blob/main/audio1.mp3";
+    audio1.src = audiomp3;
 
     query(audio1).then((response) => {
         JSONValue = response;
