@@ -8,8 +8,8 @@ function main() {
     let audioSource;
     let flag = 0;
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = 1440;
+    canvas.height = 815;
     audio1.src = audiomp3;
 
     query(audio1).then((response) => {
