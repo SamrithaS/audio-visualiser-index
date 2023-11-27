@@ -26,7 +26,8 @@ section {
     background: #F5F079;
     min-width: 400px;
     min-height: 500px;
-    margin: auto;
+    /* margin: auto; */
+    margin-left: 50px;
     position: relative;
     display: flex;
     flex-direction: column;
