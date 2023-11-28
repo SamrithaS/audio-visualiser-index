@@ -1,9 +1,5 @@
 body {
     font-family: sans-serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .flex {
@@ -125,12 +121,28 @@ div {
 
 section {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100%;
     flex-wrap: wrap;
 
+}
+
+.bar-new {
+    background: #CAF4B7;
+    padding-bottom: 0;
+    max-height: 621px;
+    min-height: 621px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+
+}
+
+.bar-new svg {
+    margin-top: 30px;
+    margin-left: -50px;
 }
 
 #container {
@@ -199,7 +211,7 @@ img {
     height: 100%;
     position: absolute;
     bottom: -60px;
-    left: -150px
+    left: -150px;
 }
 
 .highcharts-legend {
@@ -209,3 +221,11 @@ img {
 /* .highcharts-label {
     top: 145px !important
 } */
+
+.highcharts-markers.highcharts-series-0.highcharts-line-series {
+    opacity: 0;
+}
+
+#highchart-low {
+    margin-left: -27px;
+}
