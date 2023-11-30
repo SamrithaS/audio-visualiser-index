@@ -28,6 +28,7 @@ body {
 
 section {
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .justify-between {
@@ -269,7 +270,7 @@ p {
 }
 
 section:nth-of-type(3) {
-    padding-top: 140px;
+    padding-top: 70px;
     /* padding-bottom: 74px; */
 }
 
@@ -478,5 +479,5 @@ section:nth-of-type(3) {
 
 .section.news {
     background: #F4F4F4;
-    padding: 159px 15px 0 15px;
+    padding: 89px 15px 70px 15px;
 }
