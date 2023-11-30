@@ -4,6 +4,10 @@
       {
         "src": "/magazine",
         "dest": "magazine.html"
+      },
+      {
+        "src": "/",
+        "dest": "index.html"
       }
     ]
   }
