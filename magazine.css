@@ -1,0 +1,482 @@
+.flex {
+    display: flex;
+}
+
+p,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+html,
+li,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    overflow-x: hidden;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+nav {
+    padding: 13px 16px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 40;
+}
+
+.small-heading {
+    color: #000;
+    text-align: center;
+    font-family: Area Normal;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 3.355px;
+    padding-bottom: 3px;
+}
+
+.heading {
+    color: #000;
+    text-align: center;
+    font-family: GT Super Ds Trial;
+    font-size: 78px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1.56px;
+    position: relative;
+    z-index: 2;
+
+}
+
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+    max-width: 850px;
+    /* height: 600px; */
+    /* font-size: 60px; */
+    /* overflow: scroll */
+}
+
+.cover-story {
+    margin-top: -25px;
+}
+
+
+/* html {
+    background: #f2f2f2;
+} */
+
+p {
+    font-size: 40px
+}
+
+.section:nth-of-type(1) {
+    padding: 17px 27px 63.5px 27px;
+}
+
+.wealth-div {
+    padding: 0 24px 0 24px
+}
+
+.section:nth-of-type(2) {
+    padding: 63.5px 0px;
+    overflow-y: scroll;
+}
+
+.scroll-container {
+    height: 100vh;
+    overflow: scroll
+}
+
+.scroll-container {
+    overflow: auto;
+    -webkit-scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+}
+
+.wealth-watch-p {
+    color: #000;
+    font-feature-settings: 'dlig' on;
+    font-family: Spectral;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 104%;
+    /* 29.12px */
+    letter-spacing: -1.12px;
+    padding-top: 20px;
+}
+
+.text-left {
+    text-align: start;
+}
+
+.stocks {
+    padding-top: 26px;
+    padding-bottom: 71px
+}
+
+.stocks-li {
+    border-radius: 14px;
+    background: #FFF;
+    box-shadow: 0px 0.15px 2px 0px rgba(0, 0, 0, 0.25);
+    padding: 17px;
+    margin-bottom: 16px;
+}
+
+.tax-planning {
+    color: #000;
+    text-align: center;
+    font-family: GT Super Ds Trial;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 102.5%;
+    /* 47.15px */
+    letter-spacing: -0.46px;
+}
+
+.heading-4 {
+    color: #000;
+    font-feature-settings: 'dlig' on;
+    font-family: Spectral;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 104%;
+    /* 29.12px */
+    letter-spacing: -1.12px;
+    padding-left: 24px;
+}
+
+.stocks-name {
+    color: #000;
+    font-feature-settings: 'calt' off, 'liga' off;
+    font-family: Inter Variable;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 481;
+    line-height: 104%;
+    /* 18.72px */
+    letter-spacing: 0.45px;
+}
+
+.stock-number {
+    color: #09AB6B;
+    text-align: right;
+    font-feature-settings: 'calt' off, 'liga' off;
+    font-family: Inter Variable;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 104%;
+    /* 15.6px */
+    letter-spacing: 0.3px;
+}
+
+.red {
+    color: #E71609;
+}
+
+.graph {
+    padding-top: 10px;
+}
+
+.carousel-fig {
+    max-width: 234px;
+}
+
+.scroll-carousel {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding-top: 17px;
+    margin-left: 24px;
+}
+
+.scroll-carousel li {
+    scroll-snap-align: start;
+    margin-right: 24px;
+    position: relative;
+}
+
+.carousel-text {
+    color: #000;
+    font-family: Inter Variable;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 580;
+    line-height: 125%;
+    /* 21.25px */
+    letter-spacing: 0.425px;
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    padding: 6 15px 14px 15px;
+}
+
+.bg-blur {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(229, 229, 229, 0.02) 0%, rgba(0, 0, 0, 0.00) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 27%
+}
+
+.white {
+    color: white;
+}
+
+.blue-h2 {
+    color: #0098E9;
+    text-align: center;
+    font-family: Area Normal;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 11px */
+    letter-spacing: 1.375px;
+}
+
+section:nth-of-type(3) {
+    padding-top: 140px;
+    /* padding-bottom: 74px; */
+}
+
+.tax-planning {
+    padding: 18px 47px 26px 47px;
+
+}
+
+.card-fig {
+    width: 100%;
+}
+
+.card-fig img {
+    width: 100%;
+}
+
+.tax-planning-p {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'calt' off, 'liga' off;
+    font-family: Approach;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    /* 26.35px */
+    letter-spacing: 0.425px;
+    padding: 0 47px
+}
+
+.news-h4 {
+    color: #000;
+    text-align: center;
+    font-family: GT Super Ds Trial;
+    font-size: 51.768px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 51.768px */
+    letter-spacing: -1.035px;
+}
+
+.news-h2 {
+    color: #000;
+    text-align: center;
+    font-family: Area Normal;
+    font-size: 7.301px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 7.301px */
+    letter-spacing: 0.913px;
+}
+
+
+.bg-white {
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: white;
+}
+
+#container {
+    background: #F5F079;
+    /* min-width: 400px; */
+    min-height: 500px;
+    /* margin: auto; */
+    /* margin-left: 50px; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 50px
+}
+
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+}
+
+.overlay {
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    position: absolute;
+    inset: 0;
+
+}
+
+.audio-svg {
+    cursor: pointer;
+    position: absolute;
+    bottom: 22px;
+    right: 18px
+}
+
+.fig {
+    max-width: 218px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1000;
+}
+
+.fig img {
+    width: 100%;
+}
+
+.details {
+    position: relative;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 9px;
+}
+
+.details p {
+    color: #000;
+    text-align: center;
+    font-family: Approach;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.9px;
+    letter-spacing: 0.45px;
+    padding-bottom: 4px;
+}
+
+.details span {
+    color: var(--black-alpha-500-alpha, rgba(0, 0, 0, 0.41));
+    text-align: center;
+    font-family: Approach;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11px;
+    letter-spacing: 1.375px;
+}
+
+.audio-text {
+    position: relative;
+    z-index: 10;
+    color: #000;
+    font-feature-settings: 'dlig' on, 'calt' off, 'liga' off;
+    font-family: Spectral;
+    /* min-width: 350px;
+    max-width: 350px; */
+    overflow: hidden;
+    max-height: 160px;
+    /* max-height: 111px; */
+    /* 36.68px */
+    letter-spacing: -1.12px;
+
+    margin: 0px 32px 10px 32px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+
+}
+
+.fade {
+    background-image: linear-gradient(to top, #F5F079, rgba(239, 239, 239, 0));
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    bottom: 60%;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.audio-lines.selected-state {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+.audio-text::-webkit-scrollbar {
+    display: none;
+}
+
+.audio-lines {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 131%;
+    opacity: 0.3;
+    transition: opacity 1s ease-in-out;
+    padding-bottom: 6px;
+    cursor: pointer
+}
+
+.audio-text.show {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+
+}
+
+.card.yellow {
+    background: #F5F079;
+    margin-left: 50px;
+}
+
+.section.news {
+    background: #F4F4F4;
+    padding: 159px 15px 0 15px;
+}

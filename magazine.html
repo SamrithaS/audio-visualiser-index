@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="magazine.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
+    <title>Magazine</title>
+
+</head>
+
+<body>
+    <nav class="sticky-nav flex justify-between align-center">
+        <img src="./assets/arrow.svg" />
+        <img src="./assets/bell.svg" />
+
+    </nav>
+    <div class="scroll-container">
+        <section class="section">
+            <h5 class="small-heading">PILOT ISSUE</h5>
+            <h2 class="heading">Overhead</h2>
+            <figure class="cover-story">
+                <img src="./assets/Group 48.png" width="100%" />
+            </figure>
+        </section>
+        <section class="section">
+            <div class="wealth-div">
+                <h5 class="small-heading text-left">WEALTH WATCH</h5>
+                <p class="wealth-watch-p">Your week in the markets.</p>
+                <ul class="stocks">
+                    <li class="stocks-li flex align-center justify-between">
+                        <span class="stocks-name">Nifty</span>
+                        <figure class="graph">
+                            <img src="./assets/nifty.png" />
+                        </figure>
+                        <span class="stock-number">3.15%</span>
+                    </li>
+                    <li class="stocks-li flex align-center justify-between">
+                        <span class="stocks-name">Equity</span>
+                        <figure class="graph">
+                            <img src="./assets/nifty.png" />
+                        </figure>
+                        <span class="stock-number">4.15%</span>
+                    </li>
+                    <li class="stocks-li flex align-center justify-between">
+                        <span class="stocks-name">Debt</span>
+                        <figure class="graph">
+                            <img src="./assets/debt.png" />
+                        </figure>
+                        <span class="stock-number red">3.15%</span>
+                    </li>
+                    <li class="stocks-li flex align-center justify-between">
+                        <span class="stocks-name">Gold</span>
+                        <figure class="graph">
+                            <img src="./assets/nifty.png" />
+                        </figure>
+                        <span class="stock-number">3.15%</span>
+                    </li>
+
+                </ul>
+            </div>
+            <h4 class="heading-4">Stuff that's happened</h4>
+            <ul class="scroll-carousel">
+                <li>
+                    <figure class="carousel-fig">
+                        <img src="./assets/carousel-img.png" />
+                    </figure>
+                    <span class="carousel-text">Is gold headed for an all time high?</span>
+                    <div class="bg-blur"></div>
+                </li>
+                <li>
+                    <figure class="carousel-fig">
+                        <img src="./assets/carousel-img-2.png" />
+                    </figure>
+                    <span class="carousel-text white">Have you invested enough to secure your future? </span>
+                    <div class="bg-blur"></div>
+                </li>
+                <li>
+                    <figure class="carousel-fig">
+                        <img src="./assets/carousel-img.png" />
+                    </figure>
+                    <span class="carousel-text">Is gold headed for an all time high?</span>
+                    <div class="bg-blur"></div>
+                </li>
+                <li>
+                    <figure class="carousel-fig">
+                        <img src="./assets/carousel-img-2.png" />
+                    </figure>
+                    <span class="carousel-text white">Have you invested enough to secure your future?</span>
+                    <div class="bg-blur"></div>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="blue-h2">WEALTH WATCH</h2>
+            <h4 class="tax-planning">Make time for tax planning</h4>
+            <p class="tax-planning-p">We pioneered the concept of discount broking and price transparency in India. Flat
+                fees and no hidden
+                charges. Varsity, the largest online stock market education book in the world covering everything from
+                the basics to advanced trading.</p>
+            <figure class="card-fig">
+                <img src="./assets/card.jpg" />
+            </figure>
+        </section>
+        <section class="section news">
+            <h4 class="news-h4">NEWS</h4>
+            <h2 class="news-h2">FROM THE</h2>
+            <h4 class="news-h4">SOURCE</h4>
+            <div id="container">
+                <canvas id="canvas"></canvas>
+
+                <audio></audio>
+                <div class="bg-white"></div>
+
+                <div class="overlay"></div>
+                <div class="fade"></div>
+                <p class="audio-text" id="audio-text"> </p>
+                <figure class="fig">
+                    <img src="man.png" />
+                </figure>
+                <div class="details">
+                    <p>Sam Altman</p>
+                    <span>CEO, OPENAI</span>
+                </div>
+                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" class="audio-svg" id="audio-svg">
+                    <rect x="4" y="2" width="2" height="13" rx="1" fill="#151515" />
+                    <rect x="16" y="2" width="2" height="13" rx="1" fill="#151515" />
+                    <rect x="8" y="5" width="2" height="7" rx="1" fill="#151515" />
+                    <rect x="12" width="2" height="17" rx="1" fill="#151515" />
+                    <rect y="5" width="2" height="7" rx="1" fill="#151515" />
+                </svg>
+            </div>
+        </section>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+
+    <script src="script.js" type="module"></script>
+
+</body>
+
+</html>

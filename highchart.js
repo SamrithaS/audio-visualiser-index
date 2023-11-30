@@ -8,7 +8,6 @@ import Highcharts from "highcharts";
 // }
 let currentValue = +document.getElementById("number").innerHTML;
 let i = 0;
-console.log('highcharyts')
 Highcharts.chart("highchart", {
     title: {
         text: "",
@@ -53,7 +52,6 @@ Highcharts.chart("highchart", {
                         }
 
                     }, 500);
-
 
                 }
 
