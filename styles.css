@@ -1,11 +1,11 @@
-body {
+/* body {
     font-family: sans-serif;
 }
 
 .flex {
     display: flex;
     align-items: center;
-}
+} */
 
 p,
 body,
@@ -119,14 +119,14 @@ div {
     box-sizing: border-box;
 }
 
-section {
+/* section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
 
-}
+} */
 
 .bar-new {
     background: #CAF4B7;
@@ -136,22 +136,26 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 50px;
+    margin: 0 0 0 24px;
 
 }
 
-.bar-new svg {
-    margin-top: 30px;
-    margin-left: -50px;
+
+.card:nth-of-type(1) {
+    margin-left: 0;
 }
 
-#container {
-    background: #F5F079;
-    min-width: 400px;
-    min-height: 500px;
-    /* margin: auto; */
-    position: relative;
-    display: flex;
+.zine {
+    color: #000;
+    font-family: Glitch Demo;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 89.5%;
+    /* 38.485px */
+    letter-spacing: -1.29px;
+    padding-left: 24px;
+    padding-bottom: 22px;
 }
 
 #canvas {
@@ -176,9 +180,9 @@ section {
     z-index: 1000;
 }
 
-img {
+/* img {
     width: 100%;
-}
+} */
 
 
 .nifty {
@@ -188,7 +192,7 @@ img {
 
 .equity {
     background: #A9E8FC;
-    margin-left: 50px;
+    margin-left: 24px;
 }
 
 
@@ -228,4 +232,9 @@ img {
 
 #highchart-low {
     margin-left: -27px;
+}
+
+.padding {
+    padding-left: 24px;
+    scroll-snap-align: start;
 }

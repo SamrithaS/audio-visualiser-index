@@ -22,7 +22,7 @@
                 <img src="./assets/Group 48.png" width="100%" />
             </figure>
         </section>
-        <section class="section">
+        <section class="section ">
             <div class="wealth-div">
                 <h5 class="small-heading text-left">WEALTH WATCH</h5>
                 <p class="wealth-watch-p">Your week in the markets.</p>
@@ -58,14 +58,17 @@
 
                 </ul>
             </div>
+        </section>
+        <section>
             <h4 class="heading-4">Stuff that's happened</h4>
             <ul class="scroll-carousel">
                 <li>
                     <figure class="carousel-fig">
                         <img src="./assets/carousel-img.png" />
+                        <div class="bg-blur"></div>
+
                     </figure>
                     <span class="carousel-text">Is gold headed for an all time high?</span>
-                    <div class="bg-blur"></div>
                 </li>
                 <li>
                     <figure class="carousel-fig">
@@ -90,7 +93,7 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="section wealth">
             <h2 class="blue-h2">WEALTH WATCH</h2>
             <h4 class="tax-planning">Make time for tax planning</h4>
             <p class="tax-planning-p">We pioneered the concept of discount broking and price transparency in India. Flat
@@ -130,11 +133,48 @@
                 </svg>
             </div>
         </section>
+        <section class="carousel-section">
+            <p class="zine">zine</p>
+            <div class="carousel flex align-center">
+                <div class="padding ">
 
+                    <div class="card">
+                        <div class="card-desc">
+                            <span class="number" id="number">19700</span>
+                            <p class="description">Nifty made another all time high this week.</p>
+                        </div>
+                        <div id="highchart"></div>
+                    </div>
+                </div>
+
+                <div class="card equity">
+                    <div class="card-desc">
+                        <span class="number" id="number">45.2 lacs</span>
+                        <p class="description">Your equity portfolio did pretty well this week.</p>
+                    </div>
+                    <div id="bar-highchart"></div>
+                </div>
+                <div class="card yellow">
+                    <div class="card-desc">
+                        <span class="number" id="number">14 lacs</span>
+                        <p class="description">Gold is not looking so good this week.</p>
+                    </div>
+                    <div id="highchart-low"></div>
+                </div>
+                <div class="card bar-new">
+                    <div class="card-desc">
+                        <span class="number" id="number">60.4 lacs</span>
+                        <p class="description">Your debt portfolio is super solid.</p>
+                    </div>
+                    <div id="bars-highchart"></div>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
 
     <script src="script.js" type="module"></script>
+    <script src="highchart.js" type="module"></script>
 
 </body>
 
