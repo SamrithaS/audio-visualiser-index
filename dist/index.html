@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
+    <title>Audio Visualizer</title>
+  <script type="module" crossorigin src="/assets/main-y2shaKZm.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/script-_GkmpLRI.js">
+  <link rel="stylesheet" crossorigin href="/assets/main-u7uaEuoO.css">
+</head>
+
+<body>
+    <section>
+        <div class="card">
+            <div class="card-desc">
+                <span class="number" id="number">19700</span>
+                <p class="description">Nifty made another all time high this week.</p>
+            </div>
+            <div id="highchart"></div>
+        </div>
+
+        <div class="card equity">
+            <div class="card-desc">
+                <span class="number" id="number">45.2 lacs</span>
+                <p class="description">Your equity portfolio did pretty well this week.</p>
+            </div>
+            <div id="bar-highchart"></div>
+        </div>
+        <div class="card yellow">
+            <div class="card-desc">
+                <span class="number" id="number">14 lacs</span>
+                <p class="description">Gold is not looking so good this week.</p>
+            </div>
+            <div id="highchart-low"></div>
+        </div>
+        <div class="card bar-new">
+            <div class="card-desc">
+                <span class="number" id="number">60.4 lacs</span>
+                <p class="description">Your debt portfolio is super solid.</p>
+            </div>
+            <div id="bars-highchart"></div>
+        </div>
+        <div id="container">
+            <canvas id="canvas"></canvas>
+
+            <audio></audio>
+            <div class="bg-white"></div>
+
+            <div class="overlay"></div>
+            <div class="fade"></div>
+            <p class="audio-text" id="audio-text"> </p>
+            <figure class="fig">
+                <img src="/assets/man-Sk4ADFL4.png" />
+            </figure>
+            <div class="details">
+                <p>Sam Altman</p>
+                <span>CEO, OPENAI</span>
+            </div>
+            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" class="audio-svg" id="audio-svg">
+                <rect x="4" y="2" width="2" height="13" rx="1" fill="#151515" />
+                <rect x="16" y="2" width="2" height="13" rx="1" fill="#151515" />
+                <rect x="8" y="5" width="2" height="7" rx="1" fill="#151515" />
+                <rect x="12" width="2" height="17" rx="1" fill="#151515" />
+                <rect y="5" width="2" height="7" rx="1" fill="#151515" />
+            </svg>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+
+</body>
+
+</html>
