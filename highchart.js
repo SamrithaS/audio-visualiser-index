@@ -30,30 +30,30 @@ Highcharts.chart("highchart", {
         type: "line",
         events: {
             load: function (chart) {
-                let points = [
-                    { x: 5, y: 19700 },
-                    { x: 6, y: 19600 },
-                    { x: 7, y: 19800 },
-                    { x: 8, y: 21000 },
-                    { x: 8.6, y: 21182 },
-                ];
+                // let points = [
+                //     { x: 5, y: 19700 },
+                //     { x: 6, y: 19600 },
+                //     { x: 7, y: 19800 },
+                //     { x: 8, y: 21000 },
+                //     { x: 8.6, y: 21182 },
+                // ];
 
-                if (i < points.length) {
-                    setInterval(() => {
-                        if (i < points.length) {
-                            this.series[0].addPoint([points[i]?.x, points[i]?.y]);
-                            this.series[1].data[0].update({
-                                x: points[i]?.x,
-                                y: points[i]?.y,
-                            });
-                            document.getElementById("number").innerHTML = points[i]?.y;
+                // if (i < points.length) {
+                //     setInterval(() => {
+                //         if (i < points.length) {
+                //             this.series[0].addPoint([points[i]?.x, points[i]?.y]);
+                //             this.series[1].data[0].update({
+                //                 x: points[i]?.x,
+                //                 y: points[i]?.y,
+                //             });
+                //             document.getElementById("number").innerHTML = points[i]?.y;
 
-                            i++;
-                        }
+                //             i++;
+                //         }
 
-                    }, 500);
+                //     }, 500);
 
-                }
+                // }
 
             },
         },
@@ -263,13 +263,13 @@ Highcharts.chart('bar-highchart', {
             shadow: false,
             color: "#000",
             name: 'EQUITY',
-            data: [2.3]
+            data: [0]
         },
         {
             shadow: false,
             color: '#5181FB',
             name: 'EQUITY MF',
-            data: [1.9]
+            data: [0]
         }
     ]
 });
@@ -299,34 +299,7 @@ Highcharts.chart("highchart-low", {
         type: "line",
         events: {
             load: function (chart) {
-                let points = [
-                    { x: 6, y: 19600 },
-                    { x: 7, y: 19850 },
-                    { x: 8, y: 19320 },
-                    { x: 9, y: 19700 },
-                    { x: 10, y: 19210 },
-                    { x: 11, y: 19880 },
-                    { x: 12, y: 19650 },
 
-                ];
-
-                if (i < points.length) {
-                    setInterval(() => {
-                        if (i < points.length) {
-                            this.series[0].addPoint([points[i]?.x, points[i]?.y]);
-                            this.series[1].data[0].update({
-                                x: points[i]?.x,
-                                y: points[i]?.y,
-                            });
-                            // document.getElementById("number").innerHTML = points[i]?.y;
-
-                            i++;
-                        }
-
-                    }, 500);
-
-
-                }
 
             },
         },
@@ -535,19 +508,113 @@ Highcharts.chart('bars-highchart', {
             }
         }
     },
-    series: [
-        {
-            shadow: false,
-            color: "#000",
-            name: 'DEBT MF',
-            data: [7.3]
-        },
-        {
-            pointWidth: 117,
-            shadow: false,
-            color: '#3BC618',
-            name: 'BONDS',
-            data: [6.4]
+    series: []
+});
+
+
+const options = {
+    threshold: 0.25, // Trigger when partially visible at top or bottom of viewport
+};
+
+const observer = new IntersectionObserver((entries, ind, val) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            const chart = Highcharts.charts.find(
+                (chart) => chart.renderTo.id === entry.target.id
+            );
+            if (entry.target.id === 'highchart') {
+                let points = [
+                    { x: 5, y: 19700 },
+                    { x: 6, y: 19600 },
+                    { x: 7, y: 19800 },
+                    { x: 8, y: 21000 },
+                    { x: 8.6, y: 21182 },
+                ];
+
+                let j = 0
+                if (j < points.length) {
+                    setInterval(() => {
+                        if (j < points.length) {
+
+                            chart.series[0].addPoint([points[j]?.x, points[j]?.y]);
+                            chart.series[1].data[0].update({
+                                x: points[j]?.x,
+                                y: points[j]?.y,
+                            });
+                            document.getElementById("number").innerHTML = points[j]?.y;
+
+                            j++;
+                        }
+
+                    }, 500);
+
+                }
+            }
+            else if (entry.target.id === 'bar-highchart') {
+                chart.series[0].data[0].update({
+                    y: 2.3
+                });
+                chart.series[1].data[0].update({
+                    y: 1.9
+                });
+
+            }
+            else if (entry.target.id === 'highchart-low') {
+                let pointsNew = [
+                    { x: 6, y: 19600 },
+                    { x: 8, y: 19850 },
+                    { x: 9, y: 19520 },
+                    { x: 11, y: 19700 },
+                    { x: 12, y: 19410 },
+
+                ];
+                let k = 0
+                if (k < pointsNew.length) {
+                    setInterval(() => {
+                        if (k < pointsNew.length) {
+                            chart.series[0].addPoint([pointsNew[k]?.x, pointsNew[k]?.y]);
+                            chart.series[1].data[0].update({
+                                x: pointsNew[k]?.x,
+                                y: pointsNew[k]?.y,
+                            });
+                            // document.getElementById("number").innerHTML = points[i]?.y;
+
+                            k++;
+                        }
+
+                    }, 500);
+
+
+                }
+            }
+            else {
+                chart.addSeries({
+                    shadow: false,
+                    color: "#000",
+                    name: 'DEBT MF',
+                    data: [7.3]
+                });
+                chart.addSeries({
+                    pointWidth: 117,
+                    shadow: false,
+                    color: '#3BC618',
+                    name: 'BONDS',
+                    data: [6.4]
+                });
+            }
+
+            observer.unobserve(entry.target);
         }
-    ]
+    });
+}, options);
+
+let charts = [];
+charts.push(document.querySelector("#highchart"));
+charts.push(document.querySelector("#bar-highchart"));
+charts.push(document.querySelector("#highchart-low"));
+charts.push(document.querySelector("#bars-highchart"));
+
+console.log(charts, 'charts')
+charts.forEach((chart, index) => {
+    observer.observe(chart, index);
 });
