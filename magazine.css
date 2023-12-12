@@ -47,6 +47,12 @@ nav {
     z-index: 2000;
 }
 
+.bottomsheet {
+    background-color: white !important;
+    z-index: 2000;
+    padding-top: 20px;
+}
+
 .small-heading {
     color: #000;
     text-align: center;
