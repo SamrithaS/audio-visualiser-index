@@ -18,9 +18,16 @@
         <section class="section">
             <h5 class="small-heading">PILOT ISSUE</h5>
             <h2 class="heading">Overhead</h2>
-            <figure class="cover-story">
+            <figure class="cover-story" id="trigger" data-bottomsheet-id='bottomsheet-1'>
                 <img src="./assets/Group 48.png" width="100%" />
             </figure>
+            <div id="bottomsheet-1" data-bottomsheet>
+                <h5 class="small-heading">PILOT ISSUE</h5>
+                <h2 class="heading">Overhead</h2>
+                <figure class="cover-story" id="trigger" data-bottomsheet-id='bottomsheet-1' class="bottomsheet">
+                    <img src="./assets/Group 48.png" width="100%" />
+                </figure>
+            </div>
         </section>
         <section class="section ">
             <div class="wealth-div">
@@ -62,7 +69,7 @@
         <section>
             <h4 class="heading-4">Stuff that's happened</h4>
             <ul class="scroll-carousel">
-                <li>
+                <li id="list-item-1" data-bottomsheet-id='btm-list-1'>
                     <figure class="carousel-fig">
                         <img src="./assets/carousel-img.png" />
                         <div class="bg-blur"></div>
@@ -70,27 +77,58 @@
                     </figure>
                     <span class="carousel-text">Is gold headed for an all time high?</span>
                 </li>
-                <li>
+                <li id="list-item-2" data-bottomsheet-id='btm-list-2'>
                     <figure class="carousel-fig">
                         <img src="./assets/carousel-img-2.png" />
                     </figure>
                     <span class="carousel-text white">Have you invested enough to secure your future? </span>
                     <div class="bg-blur"></div>
                 </li>
-                <li>
+                <li id="list-item-3" data-bottomsheet-id='btm-list-3'>
                     <figure class="carousel-fig">
                         <img src="./assets/carousel-img.png" />
                     </figure>
                     <span class="carousel-text">Is gold headed for an all time high?</span>
                     <div class="bg-blur"></div>
                 </li>
-                <li>
+                <li id="list-item-4" data-bottomsheet-id='btm-list-4'>
                     <figure class="carousel-fig">
                         <img src="./assets/carousel-img-2.png" />
                     </figure>
                     <span class="carousel-text white">Have you invested enough to secure your future?</span>
                     <div class="bg-blur"></div>
                 </li>
+
+                <div id="btm-list-1" class="list-bottomsheet" data-bottomsheet>
+                    <figure class="carousel-fig">
+                        <img src="./assets/carousel-img.png" />
+
+                    </figure>
+                    <span class="carousel-text">Is gold headed for an all time high?</span>
+
+                </div>
+                <div id="btm-list-2" class="list-bottomsheet" data-bottomsheet>
+                    <figure class="carousel-fig">
+                        <img src="./assets/carousel-img-2.png" />
+                    </figure>
+                    <span class="carousel-text white">Have you invested enough to secure your future? </span>
+
+                </div>
+                <div id="btm-list-3" class="list-bottomsheet" data-bottomsheet>
+                    <figure class="carousel-fig">
+                        <img src="./assets/carousel-img.png" />
+                    </figure>
+                    <span class="carousel-text">Is gold headed for an all time high?</span>
+
+                </div>
+                <div id="btm-list-4" class="list-bottomsheet" data-bottomsheet>
+                    <figure class="carousel-fig">
+                        <img src="./assets/carousel-img-2.png" />
+                    </figure>
+                    <span class="carousel-text white">Have you invested enough to secure your future?</span>
+
+                </div>
+
             </ul>
         </section>
         <section class="section wealth">
@@ -171,7 +209,9 @@
             </div>
         </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-bottomsheet@1.2.5/lib/BottomSheet.umd.js"></script>
 
     <script src="script.js" type="module"></script>
     <script src="highchart.js" type="module"></script>

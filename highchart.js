@@ -1,6 +1,12 @@
+// import BottomSheet from "js-bottomsheet/packages/js-bottomsheet/src/bottomSheet";
 import "./styles.css";
 import Highcharts from "highcharts";
+// import BottomSheet from "js-bottomsheet";
 
+// eslint-disable-next-line import/no-unresolved
+// import "js-bottomsheet/bottomsheet.css";
+
+console.log(window, BottomSheet, 'btms')
 // for (let i = 1000; i <= 21182; i++) {
 //   setTimeout(() => {
 //     document.getElementById("number").innerHTML = i;
@@ -618,3 +624,14 @@ console.log(charts, 'charts')
 charts.forEach((chart, index) => {
     observer.observe(chart, index);
 });
+
+BottomSheet({
+    trigger: 'trigger',
+})
+
+
+for (i = 1; i < 5; i++) {
+    BottomSheet({
+        trigger: `list-item-${i}`,
+    })
+}

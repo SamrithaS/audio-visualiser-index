@@ -13,6 +13,22 @@ div {
     margin: 0;
 }
 
+.list-bottomsheet img,
+.list-bottomsheet figure {
+    width: 100%;
+    max-width: unset;
+}
+
+.list-bottomsheet {
+    padding-top: 0;
+}
+
+.list-bottomsheet .carousel-text {
+    bottom: auto;
+    font-size: 40px;
+    color: #000;
+}
+
 .card {
     max-width: 358px;
     background: #ccf4de;
