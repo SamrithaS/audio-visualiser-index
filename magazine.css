@@ -81,7 +81,7 @@ nav {
 
 section {
     scroll-snap-align: start;
-    height: 100vh;
+    height: calc(100dvh - 50px);
     /* max-width: 850px; */
     /* height: 600px; */
     /* font-size: 60px; */
@@ -112,7 +112,7 @@ p {
 
 
 .scroll-container {
-    height: 100vh;
+    height: calc(100dvh - 50px);
     overflow: scroll
 }
 
@@ -501,7 +501,7 @@ section:nth-of-type(3) {
 
 .section.news {
     background: #F4F4F4;
-    padding: 89px 15px 70px 15px;
+    padding: 49px 15px 70px 15px;
 }
 
 
