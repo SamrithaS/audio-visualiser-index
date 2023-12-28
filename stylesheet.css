@@ -45,7 +45,7 @@ section {
     height: 100%;
 }
 
-.overlay {
+.overlay-bg {
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
     position: absolute;
