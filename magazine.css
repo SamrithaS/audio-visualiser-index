@@ -380,7 +380,7 @@ section:nth-of-type(3) {
     height: 100%;
 }
 
-.overlay {
+.overlay-bg {
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
     position: absolute;
@@ -502,6 +502,7 @@ section:nth-of-type(3) {
 .section.news {
     background: #F4F4F4;
     padding: 49px 15px 70px 15px;
+    overflow: scroll;
 }
 
 
@@ -680,4 +681,8 @@ card {
 .carousel-section {
     padding-top: 27px;
     padding-bottom: 100px
+}
+
+body {
+    overflow-y: hidden;
 }

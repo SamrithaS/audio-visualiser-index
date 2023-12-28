@@ -6,7 +6,6 @@ import Highcharts from "highcharts";
 // eslint-disable-next-line import/no-unresolved
 // import "js-bottomsheet/bottomsheet.css";
 
-console.log(window, BottomSheet, 'btms')
 // for (let i = 1000; i <= 21182; i++) {
 //   setTimeout(() => {
 //     document.getElementById("number").innerHTML = i;
@@ -634,4 +633,84 @@ for (i = 1; i < 5; i++) {
     BottomSheet({
         trigger: `list-item-${i}`,
     })
+}
+
+
+
+
+let elements = [document.getElementById("first-section")]
+let parent = document.getElementById("scroll-container");
+let oldscrollTop = 0;
+let oldScroll = 0;
+
+
+scrollSnapLogic(elements, parent);
+
+function scrollSnapLogic(elements, parent) {
+    if (window.innerWidth < 700) {
+        elements.forEach((i) => {
+            console.log(i, 'i')
+            i.addEventListener("scroll", () => {
+                if (
+                    i.scrollHeight <= i.scrollTop + i.clientHeight + 10 &&
+                    oldscrollTop < i.scrollTop
+                ) {
+                    parent.style.overflow = "scroll";
+                    i.style.overflow = "hidden";
+                }
+
+                if (oldscrollTop > i.scrollTop) {
+                    if (i.scrollTop < 10) {
+                        parent.style.overflow = "scroll";
+                        i.style.overflow = "hidden";
+                    } else {
+                        i.style.overflow = "scroll";
+                    }
+                }
+                oldscrollTop = i.scrollTop;
+            });
+
+            parent.addEventListener("scroll", () => {
+
+                if (
+                    parent.scrollTop >=
+                    i.offsetTop - 100 &&
+                    parent.scrollTop <=
+                    i.offsetTop + i.clientHeight &&
+                    i.scrollTop < 40 &&
+                    oldScroll < parent.scrollTop
+                ) {
+                    i.style.overflow = "scroll";
+                    parent.style.overflow = "hidden";
+                } else if (
+                    oldScroll > parent.scrollTop &&
+                    i.getBoundingClientRect().top > -10 &&
+                    i.scrollTop > 50
+                ) {
+                    parent.style.overflow = "hidden";
+                    i.style.overflow = "scroll";
+                } else {
+                }
+
+                oldScroll = parent.scrollTop;
+            });
+
+
+        })
+
+
+        // function isInViewport(i) {
+        //     const rect = i.getBoundingClientRect();
+        //     let value = i.scrollTop < 20 ? -50 : 0;
+
+        //     return (
+        //         rect.top >= -50 &&
+        //         rect.left >= 0 &&
+        //         rect.bottom <=
+        //         (window.innerHeight || document.documentElement.clientHeight) &&
+        //         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        //     );
+        // }
+
+    }
 }
