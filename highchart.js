@@ -638,7 +638,7 @@ for (i = 1; i < 5; i++) {
 
 
 
-let elements = [document.getElementById("first-section")]
+let elements = [document.getElementById("scrollable-section")]
 let parent = document.getElementById("scroll-container");
 let oldscrollTop = 0;
 let oldScroll = 0;

@@ -48,7 +48,7 @@ div {
 
 .card.equity {
     padding-bottom: 0;
-    min-height: 621px;
+    /* min-height: 621px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -152,17 +152,7 @@ div {
 
 } */
 
-.bar-new {
-    background: #CAF4B7;
-    padding-bottom: 0;
-    max-height: 621px;
-    min-height: 621px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 0 0 0 24px;
 
-}
 
 
 .card:nth-of-type(1) {
@@ -238,13 +228,17 @@ div {
 #bar-highchart {
     height: 100%;
     position: absolute;
-    bottom: -60px;
+    bottom: -99px;
     left: -150px;
 }
 
 .highcharts-legend {
     pointer-events: none;
 }
+
+/* #scrollable-section {
+    padding: 50px 0;
+} */
 
 /* .highcharts-label {
     top: 145px !important
