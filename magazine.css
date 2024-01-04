@@ -471,7 +471,7 @@ section:nth-of-type(3) {
     position: absolute;
     height: 75px;
     width: 100%;
-    bottom: 60%;
+    bottom: 0;
     z-index: 20;
     pointer-events: none;
 }
