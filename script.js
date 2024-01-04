@@ -18,7 +18,7 @@ function main() {
             let newLine = document.createElement("p");
             newLine.classList.add("audio-lines");
             newLine.innerHTML = element.part;
-            document.getElementById("audio-text").append(newLine);
+            document.getElementById("audio-text").prepend(newLine);
         });
     });
 
